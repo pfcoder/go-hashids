@@ -7,8 +7,8 @@
 package hashids
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 	"math"
 )
 
@@ -17,9 +17,10 @@ const (
 	Version string = "1.0.0"
 
 	// DefaultAlphabet is the default alphabet used by go-hashids
-	DefaultAlphabet string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+	//DefaultAlphabet string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+	DefaultAlphabet string = "1234567890"
 
-	minAlphabetLength int     = 16
+	minAlphabetLength int     = 10
 	sepDiv            float64 = 3.5
 	guardDiv          float64 = 12.0
 )
